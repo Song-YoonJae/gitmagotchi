@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d4a3e926cebc466da05965f9b3b8d5be5578186cb9459a5186ab184c6bdd432
-size 209
+## ✅ DONE
+
+- 완료된 작업 적어주세요
+
+## ✅ TODO
+
+- 브랜치안에서 미완료된 작업이 있으면 적어주세요
+
+## ✅ RESULT
+
+- 보여줄수 있는 결과물이 있으면 보여주세요
