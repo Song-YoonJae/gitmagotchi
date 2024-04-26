@@ -1,11 +1,3 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-
-export default function Home() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    navigate("/login", { replace: true });
-  }, []);
-  return <div></div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d524a867f491900353162a5efe48cd8a15be2236188885bcc0c54bfad7fbd9fd
+size 6485
