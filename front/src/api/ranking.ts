@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b8e5c84e6d20f854bc5fad7ac6d12cf0547d67d17c5d2c53c1a6e23cdbc9165
-size 354
+// import { axiosInstance } from ".";
+
+import { sampleRanking } from "./sample";
+
+export const getRankingList = async (): Promise<any> => {
+  //   const response = await axiosInstance.post("/collection", params);
+  //   return response.data;
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(sampleRanking);
+    }, 2000);
+  });
+};
