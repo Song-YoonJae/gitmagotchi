@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:426d2824cad32e18fb26ca5c5b8192722397bba36df5992e2754afc2fbef24a0
-size 249
+filepath: AnimatedDrawings/gitmagotchi/bvh/fair1/jumping.bvh
+start_frame_idx: 150
+end_frame_idx: 654
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +z
