@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b95d9e3f70734bea0127a6eadbb4156acdebdc33a986ca82c9fc0543b0fd484c
-size 233
+filepath: gitmagotchi/bvh/fair1/wave_hello.bvh
+start_frame_idx: 0
+end_frame_idx: 839
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +z
