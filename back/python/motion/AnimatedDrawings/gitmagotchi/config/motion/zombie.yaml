@@ -1,11 +1,3 @@
-filepath: AnimatedDrawings/gitmagotchi/bvh/fair1/zombie.bvh
-start_frame_idx: 0
-end_frame_idx: 779
-groundplane_joint: LeftFoot
-forward_perp_joint_vectors:
-  - - LeftShoulder
-    - RightShoulder
-  - - LeftUpLeg
-    - RightUpLeg
-scale: 0.025
-up: +z
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a36a5cf0d664bdad165b2699b5838604d9f426ed656801ca187b88b6b2191d9
+size 229
