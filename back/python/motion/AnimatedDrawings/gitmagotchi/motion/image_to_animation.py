@@ -1,10 +1,3 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# This source code is licensed under the MIT license found in the
-# LICENSE file in the root directory of this source tree.
-
-from gitmagotchi.motion.annotations_to_animation import annotations_to_animation
-import sys
-
-def image_to_animation(char_anno_dir: str, motion_cfg_fn: str, retarget_cfg_fn: str):
-    # create the animation
-    annotations_to_animation(char_anno_dir, motion_cfg_fn, retarget_cfg_fn)
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d865360966017a7ef7ead0bf7c35e314a512c96dce3fa3460d26b582e9972a7
+size 495
