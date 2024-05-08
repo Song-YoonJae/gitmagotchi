@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d6c6a2206dedff0d823cbc0daa7452cc1069f696bb38c739cc0cf89e2bbd923
-size 240
+export interface ICollection {
+  id: number;
+  characterName: string;
+  userId: number;
+  ending: "졸업" | "아사" | "병사" | "가출";
+  fullnessStat: number;
+  intimacyStat: number;
+  cleannessStat: number;
+  characterUrl: string;
+}
