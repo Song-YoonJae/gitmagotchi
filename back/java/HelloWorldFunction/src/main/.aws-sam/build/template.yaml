@@ -1,13 +1,3 @@
-Resources:
-  Function:
-    Type: AWS::Serverless::Function
-    Properties:
-      Timeout: 300
-      MemorySize: 128
-      Handler: chat.handler.AnalyzeSentimentHandler
-      CodeUri: Function
-      Runtime: java17
-      Architectures:
-      - x86_64
-    Metadata:
-      SamResourceId: Function
+version https://git-lfs.github.com/spec/v1
+oid sha256:88884054dad87f6adf7fbfa98f7e922efc6e05098059fb2d2c93f88ba79f06ba
+size 282
