@@ -1,15 +1,3 @@
-module.exports = {
-  root: true,
-  env: { browser: true, es2020: true, node: true },
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-  ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
-  parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh"],
-  rules: {
-    "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
-  },
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:e572692ddf1f097c838505ad5d2737c7e6604ca4137fa7339cae1fb003d969f2
+size 430
