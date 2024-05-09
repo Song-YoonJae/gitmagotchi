@@ -1,8 +1,3 @@
-import { CognitoUserPool } from "amazon-cognito-identity-js";
-
-const poolData = {
-  UserPoolId: "ap-northeast-2_QEPO255Ca",
-  ClientId: "ap-northeast-2:eb0125ca-e2cf-4d86-a511-056c6ae6b232",
-};
-
-export default new CognitoUserPool(poolData);
+version https://git-lfs.github.com/spec/v1
+oid sha256:b408789a375c62c820bbd1087686ca1382eebb6e74eb4f0f6e456143d52cb215
+size 240
