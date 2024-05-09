@@ -1,12 +1,3 @@
-// Copyright (c) Meta Platforms, Inc. and affiliates.
-// This source code is licensed under the MIT license found in the
-// LICENSE file in the root directory of this source tree.
-
-#version 330 core
-out vec4 FragColor;
-
-in vec3 ourColor;
-
-void main() {
-    FragColor = vec4(ourColor, 1.0);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fdeb66838756a39adf24cf23b9da0c1eee5a75f4c3a40a1ef61f879d8ca13c7
+size 292
