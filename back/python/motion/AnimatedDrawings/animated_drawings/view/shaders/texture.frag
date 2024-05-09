@@ -1,20 +1,3 @@
-// Copyright (c) Meta Platforms, Inc. and affiliates.
-// This source code is licensed under the MIT license found in the
-// LICENSE file in the root directory of this source tree.
-
-#version 330 core
-out vec4 FragColor;
-
-in vec2 TexCoord;
-
-uniform sampler2D texture0;
-
-void main() {
-    vec4 color = texture(texture0, TexCoord);
-
-    if (color.a < 0.1){
-        discard;
-    }
-
-    FragColor = color;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e37a799c5cb690af0b7c852a5034c46bb6060452a02e9f054a9333c602469539
+size 402
