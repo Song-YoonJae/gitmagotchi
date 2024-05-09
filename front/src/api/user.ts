@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7c19d74c642a9611dded1e5957a823c868c5273b357a5ca48005605560a8827
-size 387
+import { seoulInstance } from ".";
+// import { sampleUser } from "./sample";
+
+export const getUser = async (params: any): Promise<any> => {
+  const response = await seoulInstance.get("/users/me", { params });
+  console.log(response.data);
+  return response.data;
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     resolve(sampleUser);
+  //   }, 2000);
+  // });
+};
