@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc2217304b2841c73a04644224bb009c06cbf5a3c20216f83fcf9c922ae4e305
-size 203
+shapely==1.8.5.post1
+opencv-python==4.6.0.66
+glfw==2.5.5
+PyOpenGL==3.1.6
+PyYAML==6.0.1
+tqdm==4.64.1
+numpy==1.24.4
+scipy==1.10.0
+scikit-image==0.19.3
+scikit-learn==1.1.2
+Pillow==10.1.0
+awslambdaric
+boto3

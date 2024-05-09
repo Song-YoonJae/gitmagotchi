@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9dd0f05225cce6de63eb56a87d44cc8c2a6c225e9eef552e7b94e4ec41f055e
-size 343
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: collection.handler.CollectionHandler
+      CodeUri: s3://gitmagotchi-backend/0659aa8b3a57aae1d43d8ef10f0c2f0a
+      Runtime: java17
+      Architectures:
+      - x86_64
+    Metadata:
+      SamResourceId: Function
