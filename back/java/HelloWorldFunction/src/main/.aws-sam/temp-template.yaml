@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01eccdcfec996edc1e819af764b362a37902c2e89d18f26052f8a7ab0a84e9de
-size 284
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: user.handler.SearchHandler
+      CodeUri: C:\KHY\S205\S10P31S205\back\java\HelloWorldFunction
+      Runtime: java17
+      Architectures:
+        - x86_64
