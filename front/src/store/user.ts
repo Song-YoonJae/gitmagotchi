@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de25ce6f822e4afe114e716ae175e90860227ece90eac916b79cc2bfa57f60df
-size 280
+import { IUser } from "@/models";
+import { atom } from "recoil";
+import { recoilPersist } from "recoil-persist";
+
+const { persistAtom } = recoilPersist();
+
+export const userDataAtom = atom<IUser | null>({
+  key: "userData",
+  default: null,
+  effects_UNSTABLE: [persistAtom],
+});
