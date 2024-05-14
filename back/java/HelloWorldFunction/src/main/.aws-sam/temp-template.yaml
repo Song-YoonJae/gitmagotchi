@@ -1,11 +1,3 @@
-Resources:
-  Function:
-    Type: AWS::Serverless::Function
-    Properties:
-      Timeout: 300
-      MemorySize: 128
-      Handler: user.handler.RankMeHandler
-      CodeUri: C:\KHY\S205\S10P31S205\back\java\HelloWorldFunction
-      Runtime: java17
-      Architectures:
-        - x86_64
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea9b6c8528f615a4ec1e7fe30e3d37fe887cfe51f7cc238ad8ef98f9967d1f48
+size 282
