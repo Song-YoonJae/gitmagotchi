@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20b96c91d7def33c82432f8942ed51a8dc93eb4b17312d5c048a73d7184438b8
-size 284
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: user.handler.RankMeHandler
+      CodeUri: C:\KHY\S205\S10P31S205\back\java\HelloWorldFunction
+      Runtime: java17
+      Architectures:
+        - x86_64
