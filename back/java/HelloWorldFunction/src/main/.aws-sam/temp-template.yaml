@@ -1,11 +1,3 @@
-Resources:
-  Function:
-    Type: AWS::Serverless::Function
-    Properties:
-      Timeout: 300
-      MemorySize: 128
-      Handler: collection.handler.CollectionHandler
-      CodeUri: C:\KHY\S205\S10P31S205\back\java\HelloWorldFunction
-      Runtime: java17
-      Architectures:
-        - x86_64
+version https://git-lfs.github.com/spec/v1
+oid sha256:79a61f05162e33c812acd9de77172fd13228c5164f4886e4f0e53ceea3321eb7
+size 303

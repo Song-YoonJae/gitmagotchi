@@ -1,13 +1,3 @@
-Resources:
-  Function:
-    Type: AWS::Serverless::Function
-    Properties:
-      Timeout: 300
-      MemorySize: 128
-      Handler: collection.handler.CollectionHandler
-      CodeUri: Function
-      Runtime: java17
-      Architectures:
-      - x86_64
-    Metadata:
-      SamResourceId: Function
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2e9f4e4087a20e3154173f4ca8a8e03d0ff0ef00bae161d3cb12d856f962d17
+size 303
