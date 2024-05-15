@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1926f4f48c86c19f2181702189e7bd13fff62593fd98aef4a8997399ed6bcf60
-size 282
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: chat.handler.ChatHandler
+      CodeUri: Function
+      Runtime: java17
+      Architectures:
+      - x86_64
+    Metadata:
+      SamResourceId: Function

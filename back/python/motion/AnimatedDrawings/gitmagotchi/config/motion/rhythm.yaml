@@ -1,12 +1,3 @@
-filepath: gitmagotchi/bvh/rokoko/jumping.bvh
-start_frame_idx: 10
-end_frame_idx: 200
-frame_time: 0.0333333
-groundplane_joint: LeftFoot
-forward_perp_joint_vectors:
-  - - LeftShoulder
-    - RightShoulder
-  - - LeftUpLeg
-    - RightUpLeg
-scale: 0.025
-up: +y
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4626eabb216fd3ad4a01cbea74bb21cc995cd99018b741f7b19466446abc67c
+size 254
