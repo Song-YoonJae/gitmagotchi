@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abcdc03d0c85265bd1bfbc1f9cf36892a4020ea5fb9bfe44b31e94fa3b156ce5
-size 226
+filepath: gitmagotchi/bvh/fair1/dab.bvh
+start_frame_idx: 0
+end_frame_idx: 339
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +z
