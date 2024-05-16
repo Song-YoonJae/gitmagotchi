@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5079d203249ff5617469ca770c4c42b4dfaf24e5d488bba3ff31f9c00959ca18
-size 549
+package character.image.entity;
+
+import common.entity.BaseEntity;
+import lombok.Getter;
+import software.amazon.awssdk.services.sts.endpoints.internal.Value.Int;
+import user.entity.User;
+
+import javax.persistence.*;
+@Entity
+@Getter
+@Table(name = "`character`")
+public class Characters extends BaseEntity {
+
+    @Id
+    private Integer id;
+
+    private Integer user_id;
+    private String name;
+    private Integer exp;
+
+    @Column(name = "face_url")
+    private String faceUrl;
+
+}
