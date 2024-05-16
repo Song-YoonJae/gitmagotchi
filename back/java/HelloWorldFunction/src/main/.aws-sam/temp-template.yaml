@@ -1,11 +1,3 @@
-Resources:
-  Function:
-    Type: AWS::Serverless::Function
-    Properties:
-      Timeout: 300
-      MemorySize: 128
-      Handler: character.image.handler.CharacterImageHandler
-      CodeUri: C:\KHY\부트캠프\SSAFY\2학기\gitmagotchi\S10P31S205\back\java\HelloWorldFunction
-      Runtime: java17
-      Architectures:
-        - x86_64
+version https://git-lfs.github.com/spec/v1
+oid sha256:292af693d96c47206a0d9570e097881213d717f164882be004a9e29f3d2da952
+size 285
