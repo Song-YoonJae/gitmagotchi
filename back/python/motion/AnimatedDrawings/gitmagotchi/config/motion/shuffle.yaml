@@ -1,11 +1,3 @@
-filepath: gitmagotchi/bvh/rokoko/shuffle.bvh
-start_frame_idx: 240
-end_frame_idx: 480
-groundplane_joint: LeftFoot
-forward_perp_joint_vectors:
-  - - LeftShoulder
-    - RightShoulder
-  - - LeftUpLeg
-    - RightUpLeg
-scale: 0.025
-up: +y
+version https://git-lfs.github.com/spec/v1
+oid sha256:46ff4598f1aeb691c4acd430d5bb4c3a156dabca4a98aad59ecfacbfb024c8c8
+size 233
