@@ -1,11 +1,3 @@
-filepath: gitmagotchi/bvh/rokoko/plot_twist.bvh
-start_frame_idx: 10
-end_frame_idx: 1937
-groundplane_joint: LeftFoot
-forward_perp_joint_vectors:
-  - - LeftShoulder
-    - RightShoulder
-  - - LeftUpLeg
-    - RightUpLeg
-scale: 0.025
-up: +y
+version https://git-lfs.github.com/spec/v1
+oid sha256:f892a30287f184471d6085a32de834c08cb279a61c23a3b28656054e903e96df
+size 236

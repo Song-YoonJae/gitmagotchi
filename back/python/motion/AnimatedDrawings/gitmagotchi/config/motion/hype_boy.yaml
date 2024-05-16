@@ -1,11 +1,3 @@
-filepath: gitmagotchi/bvh/rokoko/hype_boy.bvh
-start_frame_idx: 0
-end_frame_idx: 306
-groundplane_joint: LeftFoot
-forward_perp_joint_vectors:
-  - - LeftShoulder
-    - RightShoulder
-  - - LeftUpLeg
-    - RightUpLeg
-scale: 0.025
-up: +y
+version https://git-lfs.github.com/spec/v1
+oid sha256:6363d66b1464e35f4fe033aaa355d046ac116825d965dce8db3298a16585da59
+size 232
