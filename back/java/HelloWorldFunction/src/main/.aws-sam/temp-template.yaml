@@ -1,11 +1,3 @@
-Resources:
-  Function:
-    Type: AWS::Serverless::Function
-    Properties:
-      Timeout: 300
-      MemorySize: 128
-      Handler: chat.handler.Claude3Handler
-      CodeUri: C:\KHY\S205\S10P31S205\back\java\HelloWorldFunction
-      Runtime: java17
-      Architectures:
-        - x86_64
+version https://git-lfs.github.com/spec/v1
+oid sha256:af46b785a010f48646a1b461e58d1fef66ea04553abce679f995b03c6bcaba37
+size 337
