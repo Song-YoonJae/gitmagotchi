@@ -1,22 +1,3 @@
-import { IBaseEntity } from "@/models";
-
-export interface IUser extends IBaseEntity {
-  id: number;
-  githubToken: string;
-  githubUsername: string;
-  gold: number;
-  lastTime: string;
-  meal: number;
-  nickname: string;
-  profileImg: string;
-  characterId: number | null;
-  backgroundUrl: string;
-}
-
-export interface IRanking {
-  rank: number;
-  profileImg: string;
-  username: string;
-  nickname: string;
-  amount: number;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c15ebbbfcdfd4f7af4706208ae207b8beb04a7a9349f15dc061df69fb259028c
+size 570
