@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47cee4b760be2022b43760e43b9ef5d1672022dbbeb94fd5f4012293f8f5d6b3
-size 133
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node"
+  }
+}
