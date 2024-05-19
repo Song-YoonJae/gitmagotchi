@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afc1cf2121f051790a0e7b667f52b6eaf69dde12b185614da19914f5f0c1391a
-size 328
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: collection.handler.CollectionHandler
+      CodeUri: C:\KHY\부트캠프\SSAFY\2학기\gitmagotchi\S10P31S205\back\java\HelloWorldFunction
+      Runtime: java17
+      Architectures:
+        - x86_64
