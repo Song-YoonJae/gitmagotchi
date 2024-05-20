@@ -1,26 +1,3 @@
-import tw from "tailwind-styled-components";
-
-interface IProps {
-  title: string;
-  onClick?: () => void;
-}
-
-export default function CommonButton({ title, onClick }: IProps) {
-  return <Container onClick={onClick}>{title}</Container>;
-}
-
-const Container = tw.button`
-w-72
-lg:w-52
-h-10
-rounded-lg
-flex
-items-center
-justify-center
-bg-purple-300
-hover:bg-purple-200
-cursor-pointer
-border-2
-border-slate-800
-font-bold
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:df93fe2f9f46f0f639897cf0350e912377ba10458ff765086de84dcfddb057d3
+size 538
