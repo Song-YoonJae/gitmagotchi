@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66a71ceb8c4cfd7980247827fd9608d0ae0f3d536025a071d64ef60c5f5f08ab
-size 232
+filepath: gitmagotchi/bvh/rokoko/walking.bvh
+start_frame_idx: 50
+end_frame_idx: 450
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +y

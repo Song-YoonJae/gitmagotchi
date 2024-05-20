@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92ccf344cd8b2a173d4b5a2083c767a658daf2ac216d11301212c5b7bb18bd32
-size 231
+filepath: gitmagotchi/bvh/rokoko/shower.bvh
+start_frame_idx: 10
+end_frame_idx: 334
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +y

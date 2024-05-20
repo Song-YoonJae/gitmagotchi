@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6f069fcddc39bd9d42cd5e1c9dc1ffea129c602293ecc4c5260c63411b87a32
-size 59
+*.zip
+*.gif
+.DS_Store
+__pycache__
+
+motion/character_assets/

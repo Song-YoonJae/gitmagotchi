@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb247e1ed085768d6c0d2ae6ee21d568723a949919531a23f1ffaf62bd02e5d9
-size 252
+filepath: gitmagotchi/bvh/fair1/zombie.bvh
+start_frame_idx: 40
+end_frame_idx: 390
+frame_time: 0.0333333
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +z

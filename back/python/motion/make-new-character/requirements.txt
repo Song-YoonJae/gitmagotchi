@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:961e84377e361ad463bc7ef3a108175ed2610677480f540c11f9b60b698fc699
-size 54
+tqdm==4.64.1
+Pillow==10.1.0
+awslambdaric
+boto3
+pymysql

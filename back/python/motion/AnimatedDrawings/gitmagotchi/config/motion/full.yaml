@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41cf8443252d8bbaec185c73f74adc4e457303bdc9e79db73a44103fd7a1bb2d
-size 229
+filepath: gitmagotchi/bvh/rokoko/full.bvh
+start_frame_idx: 10
+end_frame_idx: 367
+groundplane_joint: LeftFoot
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +y
