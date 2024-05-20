@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19ac171465cb83594fafa3bb123164b0c2f920bec18ec0c9c6d436c58a50287f
-size 789
+package helloworld;
+
+import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+
+public class AppTest {
+  @Test
+  public void successfulResponse() {
+    App app = new App();
+    APIGatewayProxyResponseEvent result = app.handleRequest(null, null);
+    assertEquals(200, result.getStatusCode().intValue());
+    assertEquals("application/json", result.getHeaders().get("Content-Type"));
+    String content = result.getBody();
+    assertNotNull(content);
+    assertTrue(content.contains("\"message\""));
+    assertTrue(content.contains("\"hello world\""));
+    assertTrue(content.contains("\"location\""));
+  }
+}

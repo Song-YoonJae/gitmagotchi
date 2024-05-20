@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94b7cbc34083d202b0a582429eac276bbc0d330f6799f50b5e52bf5eba15d54e
-size 557
+package user.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class RankResponseDto {
+    private Integer id;
+    private String profileImg;
+    private String nickname;
+    private String githubToken;
+    private String githubUsername;
+    private Integer gold = 0;
+    private Integer meal = 0;
+    private Integer backgroundId;
+    private Integer characterId;
+    private Integer rank;
+}

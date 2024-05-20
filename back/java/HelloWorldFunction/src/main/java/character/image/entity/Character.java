@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ceece05184ce6c83b38b4babcd51323afe7a32aaacf6af19bd5d3f00c37c68fc
-size 752
+package character.image.entity;
+
+import common.entity.BaseEntity;
+import lombok.Getter;
+import user.entity.User;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@Table(name = "`character`")
+public class Character extends BaseEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    private String name;
+    private Integer exp;
+
+    @Column(name = "face_url")
+    private String faceUrl;
+    @Column(name = "character_child_url")
+    private String characterChildUrl;
+    @Column(name = "character_adult_url")
+    private String characterAdultUrl;
+    @Column(name = "last_online")
+    private String lastOnline;
+}

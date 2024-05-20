@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb9a129f829bc43f612482d107f964b1835b45dbcbb85020e0e95fcbb52e17b9
-size 627
+package user.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import java.time.LocalDateTime;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserResponseDto {
+    private Integer id;
+    private String profileImg;
+    private String nickname;
+    private String githubToken;
+    private String githubUsername;
+    private Integer gold = 0;
+    private Integer meal = 0;
+    private LocalDateTime lastTime = LocalDateTime.now();
+    private Integer backgroundId;
+    private Integer characterId;
+    private Long collectionCount = 0L;
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a789b9e032984caf12d6f37b97c16382ef75f0df34ea7b90a6dd9dd5b693a900
-size 773
+import { ICharacter } from "@/models";
+import { seoulInstance } from ".";
+
+export const getSearchList = async (params: any): Promise<any> => {
+  const response = await seoulInstance.post("/collection", params);
+  return response.data;
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     if (params.type === "CHARACTER") {
+  //       resolve(sampleCharacterList);
+  //     } else {
+  //       resolve(sampleUserList);
+  //     }
+  //   }, 2000);
+  // });
+};
+
+export const getUserSearchList = async (params: any): Promise<any> => {
+  return seoulInstance.get("/users/search", { params });
+};
+
+export const getCharacterSearchList = async (params: {
+  name: string;
+}): Promise<ICharacter[]> => {
+  return seoulInstance.get("/characters", { params });
+};

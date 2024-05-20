@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e152a3bceda93c18af84ca1f7c5340715e7631da4ed7ef6b1943d7409ab57e93
-size 554
+// Copyright (c) Meta Platforms, Inc. and affiliates.
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
+
+#version 330 core
+layout(location = 0) in vec3 pos;
+layout(location = 1) in vec3 color;
+
+out vec3 ourColor;
+
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 proj;
+
+uniform bool color_black;
+
+void main() {
+    gl_Position = proj * view * model * vec4(pos, 1.0);
+    if (color_black){
+        ourColor = vec3(0.0, 0.0, 0.0);
+    } else{
+        ourColor = color;
+    }
+}

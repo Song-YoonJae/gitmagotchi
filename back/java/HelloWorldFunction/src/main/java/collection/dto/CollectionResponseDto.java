@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de7905d6dd32b97a973f08d6c86254843bbea61f593f5f435f3f944006f48e5b
-size 563
+package collection.dto;
+
+import collection.enums.EndingType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class CollectionResponseDto {
+
+    private Integer id;
+    private String characterName;
+    private String ending;
+    private Integer fullnessStat;  //포만감
+    private Integer intimacyStat;  //친밀도
+    private Integer cleannessStat; //청결도
+    private String characterUrl;
+    private String backgroundUrl;
+}

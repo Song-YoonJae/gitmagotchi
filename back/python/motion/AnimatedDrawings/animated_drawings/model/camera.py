@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cae52eeeee67536f674557b12e8320b643a1a3a441a2277c9454aa3fcf02044
-size 775
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+
+from animated_drawings.model.transform import Transform
+from animated_drawings.model.vectors import Vectors
+from typing import Union, List
+
+
+class Camera(Transform):
+
+    def __init__(
+        self,
+        pos: Union[Vectors, List[Union[float, int]]] = Vectors([0.0, 0.0, 0.0]),
+        fwd: Union[Vectors, List[Union[float, int]]] = Vectors([0.0, 0.0, 1.0])
+    ):
+        super().__init__()
+
+        if not isinstance(pos, Vectors):
+            pos = Vectors(pos)
+        self.set_position(pos)
+
+        if not isinstance(fwd, Vectors):
+            fwd = Vectors(fwd)
+        self.look_at(fwd)

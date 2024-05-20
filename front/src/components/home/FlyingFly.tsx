@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:594c1ed54452cbd4fa01bb0717ad4bb9b21d3303bf5c2a113188410e937a040d
-size 837
+import tw from "tailwind-styled-components";
+import "./FlyingFly.css";
+
+export default function FlyingFly() {
+  return (
+    <Wrapper>
+      <div id="emptySeccCont">
+        <div className="flyRute" id="flyRute1">
+          <div className="flyCont">
+            <div id="flyWingCont">
+              <div id="fly"></div>
+              <div className="flyWing"></div>
+              <div className="flyWing"></div>
+            </div>
+          </div>
+        </div>
+        <div className="flyRute" id="flyRute2">
+          <div className="flyCont">
+            <div id="flyWingCont">
+              <div id="fly"></div>
+              <div className="flyWing"></div>
+              <div className="flyWing"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  );
+}
+
+const Wrapper = tw.div`
+w-full
+h-full
+`;
