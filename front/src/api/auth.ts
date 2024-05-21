@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b408789a375c62c820bbd1087686ca1382eebb6e74eb4f0f6e456143d52cb215
-size 240
+import { CognitoUserPool } from "amazon-cognito-identity-js";
+
+const poolData = {
+  UserPoolId: import.meta.env.VITE_APP_USER_POOL_ID,
+  ClientId: import.meta.env.VITE_APP_IDENTITY_POOL_ID,
+};
+
+export default new CognitoUserPool(poolData);

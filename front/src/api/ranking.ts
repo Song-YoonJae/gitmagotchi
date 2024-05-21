@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c51bca01e170b5f3c621b427afa571ac53b26087e160110447c05a8a21cad6bf
-size 498
+import { IRanking, Pageable } from "@/models";
+import { seoulInstance } from ".";
+
+export const getRankingList = async (params: {
+  type: "BEST" | "WORST";
+  page?: number;
+  pageSize?: number;
+}): Promise<Pageable<IRanking>> => {
+  return seoulInstance.get("/users/rank", { params });
+};
+
+export const getMyRank = async (params: {
+  type: "BEST" | "WORST";
+}): Promise<{
+  collectionCount: number;
+  rank: number;
+  id: number;
+}> => {
+  return seoulInstance.get("/users/rank/me", { params });
+};

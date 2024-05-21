@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd7943ef08c14ea7bb47b53dea78a61eb799e38875dbb59166a12b40ad95196e
-size 362
+import { ICollection, Pageable } from "@/models";
+import { seoulInstance } from ".";
+
+export const searchCollection = async (params: {
+  isCollection: boolean;
+  isIndependent: boolean | null;
+  orderBy?: "LATEST" | "OLDEST";
+  page?: number;
+  pageSize?: number;
+}): Promise<Pageable<ICollection>> => {
+  return seoulInstance.get("/collection", { params });
+};
